@@ -72,10 +72,8 @@ def build_input_parts(text, images):
     for img in images:
         content.append({
             'type': 'input_image',
-            'image_url': {
-                "url": img['data_url'],
-                'detail': 'auto'
-            }
+            'image_url': img['data_url'],
+            'detail': 'auto' 
         })
 
     return [
